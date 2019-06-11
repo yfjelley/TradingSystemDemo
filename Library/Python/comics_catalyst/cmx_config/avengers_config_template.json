@@ -1,0 +1,82 @@
+{
+    "global":
+    {
+        "context": "ironman",
+        "instance": "1205001",
+        "mode": "backtest",
+        "exchanges": ["binance", "binance"],
+        "symbols": ["dash_btc", "eth_btc"]
+    },
+    "simulation":
+    {
+        "maker_fee_pct": 0.0075,
+        "taker_fee_pct": 0.0075,
+        "slippage_pct": 0.0005
+    },
+    "signal":
+    {
+        "window": 1440,
+        "update_rate": 1,
+        "minsd": 0.003,
+        "candle_size": "1T", 
+        "hist_bar_limit": 1000,
+        "wait_for_full_hist": true,
+        "bid_ask_diffs": [0.00003, 0.00003]
+    },
+    "risk":
+    {
+        "start_ts": "2018-11-28 00:00:00",
+        "end_ts": "2018-11-29 00:00:00",
+        "max_notional": 2,
+        "min_notional": 0,
+        "max_positions": [4, 4],
+        "min_positions": [0, 0],
+        "max_delta": 0.1,
+        "quote_currency": "btc",
+        "exit_nonew_ts": "2019-11-28 17:00:00",
+        "exit_passive_ts": "2019-11-28 17:00:00",
+        "exit_active_ts": "2019-11-28 17:00:00"
+    },
+    "invent":
+    {
+        "profit_margin": 0.5,
+        "e0": 0.5,
+        "en": 1.5,
+        "share_per_level": 0.1,
+        "ignore_partial_fills": [1e-3, 1e-3],
+        "min_shares": [0.15, 0.15],
+        "ticksizes": [1e-6, 1e-6],
+        "bid_ask_offsets": [0.00003, 0.00003],
+        "hedge_rates": [0.2, 0.2]
+    },
+    "display":
+    {
+        "refresh_rate": 1,
+        "show_sim": false,
+        "plot": true
+    },
+    "storage":
+    {
+        "refresh_rate": 1,
+        "log_level": "INFO"
+    },
+    "alert":
+    {
+        "refresh_in_second": 50,
+        "email_recipients": ["2242178683@vtext.com"],
+        "connection":
+        {
+            "ts_delay_in_minute": [2, 5, 10, 30, 60, 240, 480, 1000, 1e9]
+        },
+        "pnl":
+        {
+            "live":[-0.1, -0.2, -0.4, -0.8, -100],
+            "live_sim": [0.01, 0.02, 0.1, 0.2, 0.4, 100]
+        },
+        "position":
+        {
+            "live_sim_abs": [0.4, 0.8, 1.6, 100],
+            "live_sim_pct": null
+        }
+    }
+}

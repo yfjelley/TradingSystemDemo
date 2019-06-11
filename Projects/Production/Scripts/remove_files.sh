@@ -1,0 +1,1 @@
+python /home/frankwang_trading/comics/Projects/Xman/util/remove_dated_files.py

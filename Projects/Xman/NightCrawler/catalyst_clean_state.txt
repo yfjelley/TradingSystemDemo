@@ -1,0 +1,1 @@
+catalyst clean-algo -n nightcrawler

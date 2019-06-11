@@ -1,0 +1,4 @@
+cd C:\Git\comics\Projects\Xman\catalyst-venv\Scripts
+activate catalst
+cd C:\Git\comics\Projects\Xman\NightCrawler
+python nightcrawler_paper.py
