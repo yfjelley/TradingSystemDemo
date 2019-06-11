@@ -26,7 +26,7 @@ def format_float(x):
 if __name__ == '__main__':
     dn = dt.datetime.utcnow().date() - dt.timedelta(days = 1)
     d0 = dn - dt.timedelta(days = 6)
-    contexts = ['changeling', 'cyclops', 'havok', 'sway', 'cannonball', 'colossus', 'husk', 'cecilia', 'sunfire']
+    contexts = ['nightcrawler']
     plot_folder = '/Volumes/Tamedog_2T/AirPort_Work/Trading/projects/AirPort_Xman/data/production/weekly/'
     live_plot_path = os.path.join(plot_folder, 'live/weekly_live_{}.png'.format(dn))
     live_sim_plot_path = os.path.join(plot_folder, 'live_sim/weekly_live_sim_{}.png'.format(dn))
@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
 
     # send email:
-    from_email = 'frankwang.alert@gmail.com'
+    from_email = 'xxxx.xxx@gmail.com'
     to_emails  = [from_email]
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()

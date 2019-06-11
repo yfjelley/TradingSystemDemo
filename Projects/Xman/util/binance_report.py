@@ -17,12 +17,8 @@ start_date = dt.date(2018, 7, 31)
 overwrite = False
 
 # # f = r'C:\Users\Penny\crypto\trade_history\binance\TradeHistory.xlsx'
-context_map = {'Changeling': 'dash.eth', \
+context_map = {
 			   'Nightcrawler': 'tusd.usdt',\
-			   'Cyclops': 'xmr.eth', \
-			   #'Polaris': 'etc.usdt', \
-			   'Havok': 'xem.eth', \
-			   'Sway': 'omg.eth',\
 			   }
 symbols = []
 contexts = []

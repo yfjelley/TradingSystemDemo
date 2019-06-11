@@ -160,8 +160,8 @@ class context_alert:
         # msg.attach(MIMEText(body, 'plain'))
         # server.sendmail(from_addr, to_addrs, msg.as_string())
         # server.quit()
-        sg = sendgrid.SendGridAPIClient(apikey= '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')
-        from_email = Email("frankwang.alert@gmail.com")
+        sg = sendgrid.SendGridAPIClient(apikey= 'SG.82CmTMphSvqNxxxxxx1Nw.jTSQevqg2_hBlq7ghSKyktHGzVxxxxxxxx5DavYKk')
+        from_email = Email("xxxxx.xxxx@gmail.com")
         to_email_list = [Email(x) for x in to_addrs]
         content = Content("text/plain", body)
         for to_email in to_email_list:

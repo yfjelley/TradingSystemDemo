@@ -72,7 +72,7 @@ if __name__ == '__main__':
     summary_str_df = summary_df.applymap(format_float)
 
     # send email:
-    from_email = 'frankwang.alert@gmail.com'
+    from_email = 'xxxx.xxxx@gmail.com'
     to_emails  = [from_email]
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()

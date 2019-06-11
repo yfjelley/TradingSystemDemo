@@ -20,11 +20,7 @@ if __name__ == '__main__':
 	figfiles = []
 
 	binance_context_map = {
-						   'changeling': 'dash_eth', \
-						   #'Nightcrawler': 'tusd.usdt',\
-						   'cyclops': 'xmr_eth', \
-						   'havok': 'xem_eth', \
-						   'sway': 'omg_eth',\
+						   'Nightcrawler': 'tusd.usdt',\
 						   }
 	exchange = 'binance'
 	algo_log_folder = '/Volumes/Tamedog_2T/AirPort_Work/Trading/projects/AirPort_Xman/data/production/live_algo/comics_data'
@@ -58,7 +54,7 @@ if __name__ == '__main__':
 		figfiles.append(fig_saveto)
 
 	# send email:
-	from_email = 'frankwang.alert@gmail.com'
+	from_email = 'xxxxxx.xxx@gmail.com'
 	to_emails  = [from_email]
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.ehlo()
